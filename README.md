@@ -1,6 +1,12 @@
 # Robot Framework
 Robot Framework is a generic open-source automation framework. Robot Framework is open and extensible and can be integrated with virtually any other tool to create powerful and flexible automation solutions. Robot Framework has easy syntax, utilizing human-readable keywords.
 
+## Docs
+
+- https://testersdock.com/first-test-robot-framework/
+- Github: https://github.com/alapanme/Robot-Framework
+- All Robot Framework Articles: https://testersdock.com/robot-framework-tutorial/
+
 # How to Start
 1. Clone the project
 2. Import the Project in PyCharm
