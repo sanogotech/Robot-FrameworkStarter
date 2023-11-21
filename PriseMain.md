@@ -14,6 +14,62 @@ Les avantages de Robot Framework incluent :
 - Supporte une variété de plates-formes et de langages
 - Gratuit et open source
 
+
+## Installation de Robot Framework
+
+Pour installer Robot Framework, vous devez d'abord avoir Python installé sur votre système. Vous pouvez télécharger Python depuis le site Web de Python.
+
+Une fois que vous avez Python installé, vous pouvez installer Robot Framework en exécutant la commande suivante :
+```
+pip install robotframework
+```
+Cette commande installera Robot Framework et toutes ses dépendances.
+
+**Écriture de tests Robot Framework**
+
+Les tests Robot Framework sont écrits dans un langage de script simple appelé Robot DSL. Le Robot DSL est basé sur un ensemble de mots-clés qui représentent des actions que le testeur souhaite effectuer.
+
+Voici un exemple de test Robot Framework simple :
+```
+*** Test Cases ***
+
+Test de base
+    Open Browser    http://www.google.com
+    Input Text    id=q    "Robot Framework"
+    Submit Form
+    Verify Text    id=result    ""Robot Framework""
+```
+
+Ce test ouvrira un navigateur Web, saisira le texte "Robot Framework" dans la barre de recherche, soumettra le formulaire de recherche et vérifiera que le texte "Robot Framework" s'affiche dans le résultat de la recherche.
+
+Pour plus d'informations sur l'écriture de tests Robot Framework, vous pouvez consulter la documentation officielle du framework.
+
+**Lancement des tests**
+
+Pour lancer des tests Robot Framework, vous pouvez utiliser la commande suivante :
+```
+robot <fichier_de_test>
+```
+Par exemple, pour lancer le test ci-dessus, vous pouvez exécuter la commande suivante :
+```
+robot test_base.robot
+```
+Cette commande exécutera le test et générera un rapport de résultats.
+
+Options de lancement des tests
+
+Vous pouvez utiliser plusieurs options pour personnaliser le lancement des tests Robot Framework. Voici quelques exemples :
+```
+L'option -d permet de spécifier le répertoire dans lequel les résultats des tests seront enregistrés.
+L'option -L permet de spécifier le niveau de détail des rapports de résultats.
+L'option -t permet de spécifier les tests à exécuter.
+```
+
+Pour plus d'informations sur les options de lancement des tests, vous pouvez consulter la documentation officielle du framework.
+
+
+L'installation et le lancement des tests Robot Framework sont relativement simples. En suivant les instructions ci-dessus, vous serez en mesure de commencer à écrire et à exécuter des tests automatisés avec Robot Framework
+
 ## Comment utiliser Robot Framework ?
 
 Pour utiliser Robot Framework, vous devez d'abord installer le framework. Vous pouvez le faire en téléchargeant le package d'installation du site Web de Robot Framework.
